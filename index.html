@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#062f2c">
+<meta name="theme-color" content="#003333">
 <title>Mariana Eduarda | Fisioterapeuta em Londrina e Cambé</title>
 <meta name="description" content="Fisioterapia pediátrica e gerontológica em Londrina e Cambé (PR), com atendimento individualizado e agendamento pelo WhatsApp.">
 <meta property="og:type" content="website">
@@ -15,143 +15,143 @@
 <link rel="apple-touch-icon" href="logo-mariana.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Physiotherapy","name":"Mariana Eduarda Fisioterapeuta","description":"Fisioterapia pediátrica e gerontológica com atendimento individualizado.","telephone":"+5543991221663","areaServed":[{"@type":"City","name":"Londrina"},{"@type":"City","name":"Cambé"}],"sameAs":["https://instagram.com/marianaed5"]}
 </script>
 <style>
 :root{
-  --verde:#062f2c;
-  --fundo:#041f1d;
+  /* Cores da identidade visual: verde profundo e ouro. O "papel" é só um branco levemente esverdeado. */
+  --verde:#003333;
+  --fundo:#002626;
   --ouro:#d1ae3a;
-  --ouro-esc:#7a5f14;
-  --osso:#eef0e8;
-  --tinta:#0f221e;
-  --suave:#a9bab3;
-  --linha:rgba(209,174,58,.28);
+  --papel:#f7f8f5;
+  --suave:#a9c2bd;
+  --linha:rgba(209,174,58,.32);
+  --gut:24px;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans",system-ui,sans-serif;
 }
+@media(min-width:1100px){:root{--gut:64px}}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--verde);color:var(--osso);font:400 1rem/1.7 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{margin:0;background:var(--verde);color:var(--papel);font:400 1rem/1.7 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 p{margin:0}
-h1,h2,h3,blockquote{font-family:"Bodoni Moda",Georgia,serif;font-weight:400;margin:0}
+h1,h2,h3,blockquote{font-family:var(--serif);font-weight:400;margin:0}
 :focus-visible{outline:2px solid var(--ouro);outline-offset:3px}
-.claro :focus-visible{outline-color:var(--ouro-esc)}
+[data-tema="papel"] :focus-visible,[data-tema="ouro"] :focus-visible{outline-color:var(--verde)}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ouro);color:var(--verde);padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:600}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ouro);color:var(--verde);padding:10px 16px;text-decoration:none;font-weight:600}
 .skip:focus{top:12px}
-.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
-@media(min-width:1100px){.wrap{width:min(1200px,100% - 128px)}}
+.wrap{width:min(1200px,100% - 2*var(--gut));margin-inline:auto}
 
 /* Botões e links */
-.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--ouro);color:var(--verde);padding:15px 28px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .25s,transform .25s}
-.btn:hover{background:#e3c565;transform:translateY(-1px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--ouro);color:var(--verde);border:1px solid var(--ouro);border-radius:3px;padding:17px 32px;font:600 .95rem var(--sans);text-decoration:none;transition:background .25s,color .25s}
+.btn:hover{background:transparent;color:var(--ouro)}
 .btn-sm{padding:10px 22px;font-size:.88rem}
-.link{text-decoration:underline;text-decoration-color:var(--ouro);text-decoration-thickness:1px;text-underline-offset:6px;transition:text-decoration-color .2s,color .2s}
-.link:hover{color:var(--ouro)}
+.link{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;transition:opacity .2s}
+.link:hover{opacity:.7}
 
 /* Cabeçalho */
-.topo{position:fixed;inset:0 0 auto;z-index:40;border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
-.topo.rolou{background:rgba(6,47,44,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-color:var(--linha)}
+.topo{position:fixed;inset:0 0 auto;z-index:40;background:var(--verde);border-bottom:1px solid var(--linha)}
 .topo-in{display:flex;align-items:center;gap:32px;height:76px}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
 .marca img{width:44px;height:44px}
-.marca strong{display:block;font:500 1.15rem/1.1 "Bodoni Moda",Georgia,serif}
-.marca small{display:block;font-size:.78rem;color:var(--ouro);letter-spacing:.04em;margin-top:2px}
+.marca strong{display:block;font:400 1.45rem/1 var(--serif)}
+.marca small{display:block;font-size:.78rem;color:var(--ouro);letter-spacing:.04em;margin-top:3px}
 #menu ul{display:flex;gap:32px;list-style:none;margin:0;padding:0}
 #menu a{display:inline-block;padding:8px 0;font-size:.92rem;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
 #menu a:hover{border-color:var(--ouro)}
 #menu .so-menu{display:none}
-.menu-btn{display:none;background:none;border:1px solid var(--linha);color:var(--osso);font:500 .88rem "Hanken Grotesk",sans-serif;padding:9px 18px;border-radius:999px;cursor:pointer}
+.menu-btn{display:none;background:none;border:1px solid var(--linha);color:var(--papel);font:500 .88rem var(--sans);padding:9px 18px;border-radius:3px;cursor:pointer}
 
 /* Início */
-.hero{min-height:100svh;display:flex;align-items:center;padding:112px 0 72px}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(40px,6vw,96px);align-items:center}
-.hero h1{font-size:clamp(2.7rem,7.2vw,5.6rem);line-height:1;letter-spacing:-.02em}
-.hero h1 .l{display:block;overflow:hidden;padding-bottom:.1em}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,min(40vw,580px));min-height:100svh;padding-top:76px}
+.hero-txt{align-self:center;padding:clamp(48px,7vw,96px) clamp(32px,5vw,72px) clamp(48px,7vw,96px) max(var(--gut),calc((100vw - 1200px)/2))}
+.hero h1{font-size:clamp(3.1rem,7.4vw,7rem);line-height:.94;letter-spacing:-.015em}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.08em}
 .hero h1 .l span{display:block;animation:sobe .95s cubic-bezier(.2,.7,.2,1) both}
 .hero h1 .l:nth-child(2) span{animation-delay:.08s}
 .hero h1 .l:nth-child(3) span{animation-delay:.16s}
 .hero h1 .l:nth-child(4) span{animation-delay:.24s}
-.lead{max-width:34em;color:var(--suave);font-size:1.075rem;margin:26px 0 32px}
+.lead{max-width:31em;color:var(--suave);font-size:1.08rem;margin:30px 0 34px}
 .acoes{display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px}
-.fatos{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:16px 44px;margin:56px 0 0;padding-top:22px;border-top:1px solid var(--linha)}
-.fatos dt{font-size:.82rem;color:var(--ouro)}
-.fatos dd{margin:2px 0 0;font-size:.95rem}
-.arco{margin:0;position:relative;justify-self:end;width:min(100%,430px)}
-.arco::before{content:"";position:absolute;inset:0;transform:translate(16px,16px);border:1px solid var(--ouro);border-radius:999px 999px 0 0;opacity:.6}
-.arco img{position:relative;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 40%;border-radius:999px 999px 0 0;filter:saturate(.92);animation:abre 1.3s cubic-bezier(.65,0,.2,1) .15s both}
+.hero-foto{position:relative;margin:0;background:var(--fundo)}
+.hero-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 32%;animation:abre 1.3s cubic-bezier(.65,0,.2,1) .1s both}
+.selo{position:absolute;z-index:2;left:-64px;bottom:56px;margin:0;padding:24px 30px;background:var(--ouro);color:var(--verde);display:grid;gap:12px}
+.selo div{line-height:1.3}
+.selo dt{font-size:.78rem;font-weight:600;opacity:.75}
+.selo dd{margin:0;font:400 1.25rem/1.2 var(--serif)}
 @keyframes sobe{from{transform:translateY(110%)}to{transform:none}}
 @keyframes abre{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
 
 /* Seções */
-.sec{padding:clamp(72px,10vw,140px) 0}
-.claro{background:var(--osso);color:var(--tinta)}
-.sec h2{font-size:clamp(2.3rem,4.6vw,3.9rem);line-height:1.04;letter-spacing:-.015em}
+.sec{padding:clamp(80px,11vw,160px) 0}
+.papel{background:var(--papel);color:var(--verde)}
+.ouro{background:var(--ouro);color:var(--verde)}
+.profundo{background:var(--fundo)}
+.sec h2{font-size:clamp(2.8rem,6.4vw,5.8rem);line-height:.98;letter-spacing:-.015em}
 
 /* Sobre */
-.sobre-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(32px,7vw,110px)}
-.sobre h2{position:sticky;top:120px;align-self:start}
-.sobre-corpo>*+*{margin-top:clamp(40px,5vw,64px)}
-.lead-serif{font:400 clamp(1.35rem,2.2vw,1.8rem)/1.5 "Bodoni Moda",Georgia,serif}
-.texto h3{font-size:1.5rem;margin-bottom:12px}
-.texto p{max-width:38em;color:#3d514b}
-.caminho{list-style:none;padding:0;display:grid;gap:46px;counter-reset:passo}
-.caminho li{counter-increment:passo;position:relative;display:grid;grid-template-columns:24px 1fr;gap:0 22px;align-items:baseline;font:400 clamp(1.15rem,1.8vw,1.4rem)/1.35 "Bodoni Moda",Georgia,serif}
-.caminho li::before{content:counter(passo);position:relative;z-index:1;text-align:center;background:var(--osso);color:var(--ouro-esc);font-size:1.7rem;line-height:1}
-.caminho li::after{content:"";position:absolute;left:12px;top:36px;bottom:-40px;width:1px;background:var(--ouro-esc);opacity:.55}
+.sobre h2{max-width:12em}
+.sobre-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(40px,7vw,110px);align-items:start;margin-top:clamp(48px,6vw,88px)}
+.lead-serif{font:400 clamp(1.5rem,2.5vw,2.1rem)/1.38 var(--serif)}
+.sobre blockquote{margin-top:clamp(48px,6vw,88px);padding-top:28px;border-top:2px solid var(--ouro);font-size:clamp(1.9rem,3.4vw,3rem);font-style:italic;line-height:1.15}
+.sobre blockquote footer{margin-top:16px;font:500 .9rem var(--sans);font-style:normal}
+.texto h3{font-size:1.9rem;margin-bottom:10px}
+.texto p{color:#2d5653;max-width:32em}
+.caminho{list-style:none;padding:0;margin:clamp(36px,4vw,56px) 0 0;display:grid;gap:46px;counter-reset:passo}
+.caminho li{counter-increment:passo;position:relative;display:grid;grid-template-columns:24px 1fr;gap:0 22px;align-items:baseline;font:400 clamp(1.3rem,1.9vw,1.55rem)/1.25 var(--serif)}
+.caminho li::before{content:counter(passo);position:relative;z-index:1;text-align:center;background:var(--papel);font-size:1.9rem;line-height:1}
+.caminho li::after{content:"";position:absolute;left:11.5px;top:36px;bottom:-40px;width:2px;background:var(--ouro)}
 .caminho li:last-child::after{display:none}
-blockquote{font-size:clamp(1.8rem,3.4vw,2.8rem);font-style:italic;line-height:1.2;letter-spacing:-.01em}
-blockquote p{margin:0}
-blockquote footer{margin-top:18px;font:400 .9rem "Hanken Grotesk",sans-serif;font-style:normal;color:var(--ouro-esc)}
 
 /* Atuação */
-.atuacao{background:var(--fundo)}
-.cab{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,6vw,96px);align-items:end;margin-bottom:clamp(40px,5vw,64px)}
-.cab p{color:var(--suave);max-width:32em}
+.cab{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,6vw,96px);align-items:end;margin-bottom:clamp(48px,6vw,88px)}
+.cab p{max-width:28em}
 .areas{list-style:none;margin:0;padding:0}
-.areas li{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,5fr) auto;gap:16px clamp(24px,5vw,72px);align-items:start;padding:36px 0;border-top:1px solid var(--linha);transition:background .3s}
-.areas li:last-child{border-bottom:1px solid var(--linha)}
-.areas h3{font-size:clamp(1.7rem,2.6vw,2.2rem);line-height:1.15;transition:color .25s}
-.areas li:hover h3{color:var(--ouro)}
-.areas .foco{display:block;margin-top:8px;font-size:.88rem;color:var(--ouro)}
-.areas p{color:var(--suave)}
-.areas a{font-size:.92rem;white-space:nowrap}
-.indiv{margin-top:40px;max-width:46em;color:var(--suave)}
-.indiv strong{color:var(--osso);font-weight:500}
+.areas li{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:20px clamp(24px,6vw,96px);padding:clamp(32px,4vw,52px) 0;border-top:1px solid var(--verde)}
+.areas li:last-child{border-bottom:1px solid var(--verde)}
+.areas h3{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.areas li:hover h3{transform:translateX(10px)}
+.areas .foco{display:block;margin-top:14px;font-size:.92rem;font-weight:600}
+.areas .a-txt p{margin-bottom:18px;max-width:30em}
+.areas a{font-weight:600}
+.indiv{margin-top:clamp(32px,4vw,48px);max-width:40em;font:400 clamp(1.4rem,2.2vw,1.8rem)/1.35 var(--serif)}
 
 /* Atendimento */
 .atend-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,7vw,110px);align-items:start}
-.atend-grid p{color:#3d514b;margin-top:20px;max-width:30em}
+.atend-grid p{color:var(--suave);margin-top:22px;max-width:28em}
 .cidades{list-style:none;margin:0;padding:0}
-.cidades li{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 24px;padding:26px 0;border-top:1px solid var(--tinta)}
-.cidades li:last-child{border-bottom:1px solid var(--tinta)}
-.cidades h3{font-size:clamp(2.4rem,5vw,4rem);line-height:1.05}
-.cidades span{font-size:.92rem;color:#3d514b}
+.cidades li{padding:22px 0;border-top:1px solid var(--linha)}
+.cidades li:last-child{border-bottom:1px solid var(--linha)}
+.cidades h3{font-size:clamp(3.2rem,8vw,6.6rem);line-height:1}
+.cidades span{display:block;margin-top:4px;font-size:.92rem;color:var(--ouro)}
 
 /* Contato */
-.contato-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(40px,7vw,110px);align-items:end}
-.contato h2{font-size:clamp(2.6rem,6vw,5rem);line-height:1}
-.contato .lead{margin:24px 0 32px}
+.contato h2{font-size:clamp(3rem,9vw,8.4rem);line-height:.92;max-width:11em}
+.contato-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(40px,7vw,110px);align-items:start;margin-top:clamp(40px,5vw,72px)}
+.contato .lead{margin:0 0 30px}
 .dados{margin:0}
-.dados div{padding:20px 0;border-top:1px solid var(--linha)}
+.dados div{padding:18px 0;border-top:1px solid var(--linha)}
 .dados div:last-child{border-bottom:1px solid var(--linha)}
 .dados dt{font-size:.82rem;color:var(--ouro)}
-.dados dd{margin:2px 0 0;font-size:1.1rem}
+.dados dd{margin:2px 0 0;font:400 1.5rem/1.3 var(--serif)}
 .dados a{text-decoration:none;transition:color .2s}
 .dados a:hover{color:var(--ouro)}
 
 /* Rodapé */
 body>footer{background:var(--fundo);border-top:1px solid var(--linha);padding:36px 0;font-size:.85rem;color:var(--suave)}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 32px}
-.foot .marca{margin:0;color:var(--osso)}
+.foot .marca{margin:0;color:var(--papel)}
 
-/* Coluna vertebral: indicador de leitura */
-.coluna{position:fixed;right:22px;top:50%;transform:translateY(-50%);display:none;flex-direction:column;align-items:center;gap:5px;z-index:20;pointer-events:none}
-.coluna i{display:block;height:9px;border-radius:5px;background:rgba(209,174,58,.25);transition:background .3s}
-.coluna i.on{background:var(--ouro)}
+/* Coluna vertebral: indicador de leitura (acompanha a cor da seção) */
+.coluna{--off:rgba(209,174,58,.28);--on:var(--ouro);position:fixed;left:22px;top:50%;transform:translateY(-50%);display:none;flex-direction:column;align-items:center;gap:5px;z-index:20;pointer-events:none}
+.coluna[data-tema="papel"],.coluna[data-tema="ouro"]{--off:rgba(0,51,51,.18);--on:var(--verde)}
+.coluna i{display:block;height:9px;border-radius:5px;background:var(--off);transition:background .3s}
+.coluna i.on{background:var(--on)}
 @media(min-width:1100px){.coluna{display:flex}}
 
 /* Barra de agendamento (celular) */
@@ -161,7 +161,7 @@ body>footer{background:var(--fundo);border-top:1px solid var(--linha);padding:36
   .topo-in{gap:16px}
   .topo .btn-sm{display:none}
   .menu-btn{display:block}
-  #menu{position:absolute;top:100%;left:0;right:0;background:var(--verde);border-bottom:1px solid var(--linha);padding:8px 24px 24px;display:none}
+  #menu{position:absolute;top:100%;left:0;right:0;background:var(--verde);border-bottom:1px solid var(--linha);padding:8px var(--gut) 24px;display:none}
   #menu.aberto{display:block}
   #menu ul{flex-direction:column;gap:0}
   #menu li{border-top:1px solid var(--linha)}
@@ -169,17 +169,16 @@ body>footer{background:var(--fundo);border-top:1px solid var(--linha);padding:36
   #menu a{display:block;padding:16px 0;font-size:1.05rem}
   #menu .so-menu{display:block;border:0;padding-top:20px}
   #menu .so-menu .btn{display:flex}
-  .hero{min-height:0;padding-top:104px}
-  .hero-grid{grid-template-columns:1fr}
-  .arco{justify-self:start;width:min(100%,380px);margin-top:16px}
-  .sobre-grid,.cab,.atend-grid,.contato-grid{grid-template-columns:1fr}
-  .sobre h2{position:static}
-  .areas li{grid-template-columns:1fr;gap:12px}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-txt{padding:48px var(--gut) 56px}
+  .hero-foto{display:block}
+  .hero-foto img{position:relative;inset:auto;height:auto;aspect-ratio:4/5;max-height:80svh}
+  .selo{position:static;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px 24px;padding:22px var(--gut)}
+  .cab,.sobre-grid,.atend-grid,.contato-grid,.areas li{grid-template-columns:1fr}
 }
 @media(max-width:640px){
-  .fatos{grid-template-columns:1fr;gap:14px}
   .acoes .btn{width:100%}
-  .barra{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(4,31,29,.96);border-top:1px solid var(--linha);transform:translateY(110%);visibility:hidden;transition:transform .35s,visibility 0s .35s}
+  .barra{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--fundo);border-top:1px solid var(--linha);transform:translateY(110%);visibility:hidden;transition:transform .35s,visibility 0s .35s}
   .barra.on{transform:none;visibility:visible;transition:transform .35s}
   .barra .btn{width:100%}
   body>footer{padding-bottom:96px}
@@ -217,50 +216,52 @@ body>footer{background:var(--fundo);border-top:1px solid var(--linha);padding:36
 
 <main id="conteudo">
 
-  <section class="hero" id="inicio">
-    <div class="wrap hero-grid">
-      <div>
-        <h1><span class="l"><span>Movimento,</span></span><span class="l"><span>cuidado e</span></span><span class="l"><span>qualidade</span></span><span class="l"><span>de vida.</span></span></h1>
-        <p class="lead">Um atendimento de fisioterapia pensado de forma individual, com atenção, acolhimento e cuidado em cada etapa do seu acompanhamento.</p>
-        <div class="acoes">
-          <a class="btn" href="https://wa.me/5543991221663?text=Ol%C3%A1%2C%20Mariana%21%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">Agendar pelo WhatsApp</a>
-          <a class="link" href="#sobre">Conheça meu trabalho</a>
-        </div>
-        <dl class="fatos">
-          <div><dt>Atuação</dt><dd>Pediatria e Gerontologia</dd></div>
-          <div><dt>Atendimento</dt><dd>Londrina e Cambé, PR</dd></div>
-          <div><dt>Agendamento</dt><dd>Pelo WhatsApp</dd></div>
-        </dl>
+  <section class="hero" id="inicio" data-tema="verde">
+    <div class="hero-txt">
+      <h1><span class="l"><span>Movimento,</span></span><span class="l"><span>cuidado e</span></span><span class="l"><span>qualidade</span></span><span class="l"><span>de vida.</span></span></h1>
+      <p class="lead">Um atendimento de fisioterapia pensado de forma individual, com atenção, acolhimento e cuidado em cada etapa do seu acompanhamento.</p>
+      <div class="acoes">
+        <a class="btn" href="https://wa.me/5543991221663?text=Ol%C3%A1%2C%20Mariana%21%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">Agendar pelo WhatsApp</a>
+        <a class="link" href="#sobre">Conheça meu trabalho</a>
       </div>
-      <figure class="arco">
-        <img src="mariana-fisioterapeuta.png" alt="Mariana Eduarda, fisioterapeuta, de jaleco branco, sorrindo em uma passarela de estrutura azul" width="472" height="629" fetchpriority="high" decoding="async">
-      </figure>
     </div>
+    <figure class="hero-foto">
+      <img src="mariana-fisioterapeuta.png" alt="Mariana Eduarda, fisioterapeuta, de jaleco branco, sorrindo em uma passarela de estrutura azul" width="472" height="629" fetchpriority="high" decoding="async">
+      <dl class="selo">
+        <div><dt>Atuação</dt><dd>Pediatria e Gerontologia</dd></div>
+        <div><dt>Atendimento</dt><dd>Londrina e Cambé, PR</dd></div>
+        <div><dt>Agendamento</dt><dd>Pelo WhatsApp</dd></div>
+      </dl>
+    </figure>
   </section>
 
-  <section class="sec claro sobre" id="sobre">
-    <div class="wrap sobre-grid">
+  <section class="sec papel sobre" id="sobre" data-tema="papel">
+    <div class="wrap">
       <h2>Cuidado que começa pela escuta.</h2>
-      <div class="sobre-corpo">
-        <p class="lead-serif">Meu propósito é oferecer um acompanhamento próximo e individualizado, entendendo as necessidades de cada pessoa e buscando evolução com segurança, atenção e respeito ao seu processo.</p>
-        <div class="texto">
-          <h3>Fisioterapia com propósito</h3>
-          <p>O atendimento fisioterapêutico vai além do cuidado com o movimento. Cada acompanhamento é uma oportunidade de compreender suas necessidades, estabelecer objetivos e construir um caminho de evolução de forma individualizada.</p>
+      <div class="sobre-grid">
+        <div>
+          <p class="lead-serif">Meu propósito é oferecer um acompanhamento próximo e individualizado, entendendo as necessidades de cada pessoa e buscando evolução com segurança, atenção e respeito ao seu processo.</p>
+          <blockquote>
+            <p>“Cuidar do movimento é também cuidar da liberdade de viver melhor.”</p>
+            <footer>Mariana Eduarda, fisioterapeuta</footer>
+          </blockquote>
         </div>
-        <ol class="caminho" aria-label="Como é o acompanhamento">
-          <li>Compreender as suas necessidades</li>
-          <li>Estabelecer objetivos</li>
-          <li>Construir um caminho de evolução, de forma individualizada</li>
-        </ol>
-        <blockquote>
-          <p>“Cuidar do movimento é também cuidar da liberdade de viver melhor.”</p>
-          <footer>Mariana Eduarda, fisioterapeuta</footer>
-        </blockquote>
+        <div>
+          <div class="texto">
+            <h3>Fisioterapia com propósito</h3>
+            <p>O atendimento fisioterapêutico vai além do cuidado com o movimento. Cada acompanhamento é uma oportunidade de compreender suas necessidades, estabelecer objetivos e construir um caminho de evolução de forma individualizada.</p>
+          </div>
+          <ol class="caminho" aria-label="Como é o acompanhamento">
+            <li>Compreender as suas necessidades</li>
+            <li>Estabelecer objetivos</li>
+            <li>Construir um caminho de evolução, de forma individualizada</li>
+          </ol>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="sec atuacao" id="atuacao">
+  <section class="sec ouro atuacao" id="atuacao" data-tema="ouro">
     <div class="wrap">
       <div class="cab">
         <h2>Um cuidado pensado para você.</h2>
@@ -268,27 +269,31 @@ body>footer{background:var(--fundo);border-top:1px solid var(--linha);padding:36
       </div>
       <ul class="areas">
         <li>
-          <div>
+          <div class="a-tit">
             <h3>Fisioterapia Pediátrica</h3>
             <span class="foco">Cuidado, desenvolvimento e acolhimento</span>
           </div>
-          <p>Acompanhamento fisioterapêutico voltado ao público infantil, com cuidado individualizado e atenção às necessidades de cada criança e família.</p>
-          <a class="link" href="https://wa.me/5543991221663?text=Ol%C3%A1%2C%20Mariana%21%20Gostaria%20de%20saber%20mais%20sobre%20a%20fisioterapia%20pedi%C3%A1trica." target="_blank" rel="noopener noreferrer">Conversar no WhatsApp</a>
+          <div class="a-txt">
+            <p>Acompanhamento fisioterapêutico voltado ao público infantil, com cuidado individualizado e atenção às necessidades de cada criança e família.</p>
+            <a class="link" href="https://wa.me/5543991221663?text=Ol%C3%A1%2C%20Mariana%21%20Gostaria%20de%20saber%20mais%20sobre%20a%20fisioterapia%20pedi%C3%A1trica." target="_blank" rel="noopener noreferrer">Conversar no WhatsApp</a>
+          </div>
         </li>
         <li>
-          <div>
+          <div class="a-tit">
             <h3>Gerontologia</h3>
             <span class="foco">Movimento, autonomia e qualidade de vida</span>
           </div>
-          <p>Atendimento fisioterapêutico direcionado à pessoa idosa, buscando favorecer movimento, funcionalidade, autonomia e qualidade de vida.</p>
-          <a class="link" href="https://wa.me/5543991221663?text=Ol%C3%A1%2C%20Mariana%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20atendimento%20de%20fisioterapia%20para%20pessoas%20idosas." target="_blank" rel="noopener noreferrer">Conversar no WhatsApp</a>
+          <div class="a-txt">
+            <p>Atendimento fisioterapêutico direcionado à pessoa idosa, buscando favorecer movimento, funcionalidade, autonomia e qualidade de vida.</p>
+            <a class="link" href="https://wa.me/5543991221663?text=Ol%C3%A1%2C%20Mariana%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20atendimento%20de%20fisioterapia%20para%20pessoas%20idosas." target="_blank" rel="noopener noreferrer">Conversar no WhatsApp</a>
+          </div>
         </li>
       </ul>
-      <p class="indiv"><strong>Atendimento individualizado.</strong> Cada acompanhamento considera as necessidades, objetivos e particularidades de cada paciente em sua fase de vida.</p>
+      <p class="indiv">Atendimento individualizado: cada acompanhamento considera as necessidades, objetivos e particularidades de cada paciente em sua fase de vida.</p>
     </div>
   </section>
 
-  <section class="sec claro" id="atendimento">
+  <section class="sec profundo" id="atendimento" data-tema="verde">
     <div class="wrap atend-grid">
       <div>
         <h2>Atendimento na sua região.</h2>
@@ -301,18 +306,20 @@ body>footer{background:var(--fundo);border-top:1px solid var(--linha);padding:36
     </div>
   </section>
 
-  <section class="sec contato" id="contato">
-    <div class="wrap contato-grid">
-      <div>
-        <h2>Vamos cuidar do seu movimento?</h2>
-        <p class="lead">Para informações sobre atendimentos e horários, fale diretamente comigo.</p>
-        <a class="btn" href="https://wa.me/5543991221663?text=Ol%C3%A1%2C%20Mariana%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20de%20fisioterapia." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+  <section class="sec contato" id="contato" data-tema="verde">
+    <div class="wrap">
+      <h2>Vamos cuidar do seu movimento?</h2>
+      <div class="contato-grid">
+        <div>
+          <p class="lead">Para informações sobre atendimentos e horários, fale diretamente comigo.</p>
+          <a class="btn" href="https://wa.me/5543991221663?text=Ol%C3%A1%2C%20Mariana%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20de%20fisioterapia." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+        </div>
+        <dl class="dados">
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5543991221663" target="_blank" rel="noopener noreferrer">(43) 9 9122-1663</a></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://instagram.com/marianaed5" target="_blank" rel="noopener noreferrer">@marianaed5</a></dd></div>
+          <div><dt>Atendimento</dt><dd>Londrina e Cambé, PR</dd></div>
+        </dl>
       </div>
-      <dl class="dados">
-        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5543991221663" target="_blank" rel="noopener noreferrer">(43) 9 9122-1663</a></dd></div>
-        <div><dt>Instagram</dt><dd><a href="https://instagram.com/marianaed5" target="_blank" rel="noopener noreferrer">@marianaed5</a></dd></div>
-        <div><dt>Atendimento</dt><dd>Londrina e Cambé, PR</dd></div>
-      </dl>
     </div>
   </section>
 
@@ -338,13 +345,13 @@ body>footer{background:var(--fundo);border-top:1px solid var(--linha);padding:36
   const $=s=>document.querySelector(s);
   $('#ano').textContent=new Date().getFullYear();
 
-  const topo=$('#topo'),btn=$('.menu-btn'),menu=$('#menu');
+  const btn=$('.menu-btn'),menu=$('#menu');
   const fechar=()=>{menu.classList.remove('aberto');btn.setAttribute('aria-expanded','false')};
   btn.addEventListener('click',()=>{btn.setAttribute('aria-expanded',menu.classList.toggle('aberto'))});
   menu.addEventListener('click',e=>{if(e.target.closest('a'))fechar()});
   addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.classList.contains('aberto')){fechar();btn.focus()}});
 
-  // Coluna vertebral: segmentos acendem conforme a leitura avança
+  // Coluna vertebral: segmentos acendem conforme a leitura avança e acompanham a cor da seção
   const col=$('.coluna'),N=18,seg=[];
   for(let k=0;k<N;k++){const i=document.createElement('i');i.style.width=(8+k*.6)+'px';col.appendChild(i);seg.push(i)}
   let pend=false;
@@ -352,9 +359,11 @@ body>footer{background:var(--fundo);border-top:1px solid var(--linha);padding:36
     pend=false;
     const max=document.documentElement.scrollHeight-innerHeight;
     const p=max>0?scrollY/max:0;
-    topo.classList.toggle('rolou',scrollY>24);
     const f=Math.round(p*N);
     seg.forEach((s,k)=>s.classList.toggle('on',k<f));
+    const sec=document.elementFromPoint(innerWidth/2,innerHeight/2);
+    const t=(sec&&sec.closest('section[data-tema]'))?.dataset.tema||'verde';
+    if(col.dataset.tema!==t)col.dataset.tema=t;
   };
   addEventListener('scroll',()=>{if(!pend){pend=true;requestAnimationFrame(atualiza)}},{passive:true});
   addEventListener('resize',atualiza);
